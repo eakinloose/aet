@@ -12,9 +12,14 @@ const Topsection = () => {
             <span className="aet">
                <Link to="/review">AET</Link>
             </span>
-            , find some of my codes on <span className="github">Github</span>{" "}
+            , find some of my codes on{" "}
+            <span className="github">
+               <a href="https://github.com/eakinloose">Github</a>
+            </span>{" "}
             and find out more about me on{" "}
-            <span className="instagram">Instagram.</span>
+            <span className="instagram">
+               <a href="https://instagram.com/eakinloose">Instagram</a>.
+            </span>
          </p>
       </Wrapper>
    );
