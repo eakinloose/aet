@@ -93,6 +93,7 @@ export const Wrapper = styled.div`
 
       img {
          height: 17px;
+         margin: 10px 0 0;
       }
       button {
          border: 2px solid white;

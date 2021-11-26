@@ -19,6 +19,7 @@ const Projects = () => {
                   eiusmod cillum tempor id occaecat velit proident deserunt
                   exercitation eiusmod do dolor. Aute proident ad tempor tempor
                   esse officia.
+                  <p>NB: In progress</p>
                </p>
                <button>See Edusko</button>
             </div>
@@ -34,8 +35,9 @@ const Projects = () => {
                   eiusmod cillum tempor id occaecat velit proident deserunt
                   exercitation eiusmod do dolor. Aute proident ad tempor tempor
                   esse officia.
+                  <p>NB: Best view on width: 1040px</p>
                </p>
-               <button>See one-burner</button>
+               <button><a href="https://nuelzone-burner.netlify.app">See one-burner</a></button>
             </div>
          </div>
          <div className="prosperwrapper">
@@ -49,10 +51,12 @@ const Projects = () => {
                   eiusmod cillum tempor id occaecat velit proident deserunt
                   exercitation eiusmod do dolor. Aute proident ad tempor tempor
                   esse officia.
+                  <p>NB: Best view on width: 1040px</p>
                </p>
-               <button>See Prospa</button>
+               <button><a href="https://nuelzprospa.netlify.app">See Prospa</a></button>
             </div>
          </div>
+         <h5>i have more functional projects but i want to add a little something something to them... WATCH THE SPACE.</h5>
       </Wrapper>
    );
 };
