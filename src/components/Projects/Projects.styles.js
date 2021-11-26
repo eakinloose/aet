@@ -64,13 +64,13 @@ export const Wrapper = styled.div`
 
          div {
             width: 99.05%;
-            margin: 0 1.5%;
+            margin: 0 1%;
             background: rgb(15, 15, 15);
-            padding: 0rem 1rem 0.5rem;
+            padding: 0.2rem 1rem 0.5rem;
          }
-
          img {
-            height: 45px;
+            height: 44px;
+            margin: 0;
          }
 
          h5 {
@@ -98,7 +98,6 @@ export const Wrapper = styled.div`
          background: white;
 
          img {
-            margin: 1.3rem 0 0.5rem;
             height: 17px;
          }
          button {
