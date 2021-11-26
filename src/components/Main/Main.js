@@ -6,9 +6,9 @@ const Main = () => {
       <Wrapper>
          <h4>What Languages do i write?</h4>
          <p>
-            Before listing the languages and framework i can use let me start by
-            letting you know learning to programme in <span className="c">c#</span> was one of
-            my set objective for next year 2022.
+            Before listing the languages and framework i can use, let me start by
+            letting you know <em>learning to programme in <span className="c">c#</span> is one of
+            my set objective for next year <strong>2022</strong></em>&#x1F60A;.
          </p>
          <h4>Okay let's start</h4>
          <ul>
@@ -33,7 +33,7 @@ const Main = () => {
             </li>
             <li>
                <p>typeScript</p>
-               <span>&#x2B50;&#x2B50;&#x2B50; &#10025; &nbsp; &#10025;</span>
+               <span>&#x2B50;&#x2B50;&#x2B50; &#10025; &nbsp;&#10025;</span>
             </li>
          </ul>
       </Wrapper>
