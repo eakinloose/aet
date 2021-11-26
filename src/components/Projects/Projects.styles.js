@@ -49,6 +49,64 @@ export const Wrapper = styled.div`
       }
    }
 
+   .wrapper-two {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .oneburnerwrapper,
+      .prosperwrapper {
+         width: 49%;
+         background: purple;
+         border-radius: 5px;
+         margin: 10px auto;
+
+         div {
+            width: 99.05%;
+            margin: 0 1.5%;
+            background: rgb(15, 15, 15);
+            padding: 0rem 1rem 0.5rem;
+         }
+
+         img {
+            height: 45px;
+         }
+
+         h5 {
+            margin: 5px 0;
+            color: grey;
+         }
+
+         p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 3px 0;
+         }
+
+         button {
+            padding: 7px;
+            background: transparent;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid purple;
+            cursor: pointer;
+         }
+      }
+
+      .prosperwrapper {
+         background: white;
+
+         img {
+            margin: 1.3rem 0 0.5rem;
+            height: 18px;
+         }
+         button {
+            border: 2px solid white;
+            width: 80px;
+         }
+      }
+   }
+
    @media screen and (max-width: 799px) {
       width: 100%;
       p {
