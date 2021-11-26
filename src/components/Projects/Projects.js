@@ -23,7 +23,6 @@ const Projects = () => {
                <button>See Edusko</button>
             </div>
          </div>
-         <div className="wrapper-two">
          <div className="oneburnerwrapper">
             <div>
                <img src={oneburner} alt="edusko" />
@@ -53,7 +52,6 @@ const Projects = () => {
                </p>
                <button>See Prospa</button>
             </div>
-         </div>
          </div>
       </Wrapper>
    );

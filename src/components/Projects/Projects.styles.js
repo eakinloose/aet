@@ -49,61 +49,54 @@ export const Wrapper = styled.div`
       }
    }
 
-   .wrapper-two {
+   .oneburnerwrapper,
+   .prosperwrapper {
       width: 100%;
-      margin: 0.7rem auto;
-      color: white;
-      padding: 0.5rem;
+      background: purple;
+      border-radius: 5px;
+      margin: 10px auto;
 
-      .oneburnerwrapper,
-      .prosperwrapper {
-         width: 100%;
-         background: purple;
-         border-radius: 5px;
-         margin: 10px auto;
-
-         div {
-            width: 99.05%;
-            margin: 0 1%;
-            background: rgb(15, 15, 15);
-            padding: 0.2rem 1rem 0.5rem;
-         }
-         img {
-            height: 44px;
-            margin: 0;
-         }
-
-         h5 {
-            margin: 5px 0;
-            color: grey;
-         }
-
-         p {
-            font-size: 14px;
-            line-height: 1.4;
-            margin: 3px 0;
-         }
-
-         button {
-            padding: 7px;
-            background: transparent;
-            color: white;
-            border-radius: 5px;
-            border: 2px solid purple;
-            cursor: pointer;
-         }
+      div {
+         width: 99.05%;
+         margin: 0 1%;
+         background: rgb(15, 15, 15);
+         padding: 0.2rem 1rem 0.5rem;
+      }
+      img {
+         height: 44px;
+         margin: 0;
       }
 
-      .prosperwrapper {
-         background: white;
+      h5 {
+         margin: 5px 0;
+         color: grey;
+      }
 
-         img {
-            height: 17px;
-         }
-         button {
-            border: 2px solid white;
-            width: 80px;
-         }
+      p {
+         font-size: 14px;
+         line-height: 1.4;
+         margin: 3px 0;
+      }
+
+      button {
+         padding: 7px;
+         background: transparent;
+         color: white;
+         border-radius: 5px;
+         border: 2px solid purple;
+         cursor: pointer;
+      }
+   }
+
+   .prosperwrapper {
+      background: white;
+
+      img {
+         height: 17px;
+      }
+      button {
+         border: 2px solid white;
+         width: 80px;
       }
    }
 
