@@ -50,13 +50,14 @@ export const Wrapper = styled.div`
    }
 
    .wrapper-two {
-      display: flex;
       width: 100%;
-      justify-content: space-between;
+      margin: 0.7rem auto;
+      color: white;
+      padding: 0.5rem;
 
       .oneburnerwrapper,
       .prosperwrapper {
-         width: 49%;
+         width: 100%;
          background: purple;
          border-radius: 5px;
          margin: 10px auto;
@@ -98,7 +99,7 @@ export const Wrapper = styled.div`
 
          img {
             margin: 1.3rem 0 0.5rem;
-            height: 18px;
+            height: 17px;
          }
          button {
             border: 2px solid white;
