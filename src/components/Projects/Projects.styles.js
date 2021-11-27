@@ -12,17 +12,24 @@ export const Wrapper = styled.div`
       margin: 5px 0;
    }
 
+   .projectholder {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+   }
+
    .Eduskowrapper {
       width: 100%;
       background: #173381;
       border-radius: 5px;
-      margin: 10px auto;
 
       div {
          width: 99.05%;
+         height: 100%;
          margin: 0 1%;
+         position: relative;
          background: rgb(15, 15, 15);
-         padding: 0.2rem 1rem 0.5rem;
+         padding: 0.2rem 1rem 2.9rem;
       }
       img {
          height: 21px;
@@ -40,30 +47,35 @@ export const Wrapper = styled.div`
       }
       button {
          padding: 7px;
-         width: 80px;
+         width: 100px;
          background: transparent;
          color: white;
          border-radius: 5px;
          border: 2px solid #173381;
          cursor: pointer;
+         position: absolute;
+         bottom: 10px;
       }
    }
 
    .oneburnerwrapper,
-   .prosperwrapper {
+   .prosperwrapper,
+   .storewrapper,
+   .fusedwrapper {
       width: 100%;
       background: purple;
       border-radius: 5px;
-      margin: 10px auto;
 
       div {
          width: 99.05%;
+         height: 100%;
          margin: 0 1%;
+         position: relative;
          background: rgb(15, 15, 15);
-         padding: 0.2rem 1rem 0.5rem;
+         padding: 0.2rem 1rem 2.9rem;
       }
       img {
-         height: 44px;
+         height: 40px;
          margin: 0;
       }
 
@@ -85,22 +97,55 @@ export const Wrapper = styled.div`
          border-radius: 5px;
          border: 2px solid purple;
          cursor: pointer;
+         position: absolute;
+         bottom: 10px;
       }
    }
 
    .prosperwrapper {
-      background: white;
+      background: #cd486b;
 
       img {
          height: 17px;
          margin: 10px 0 0;
       }
       button {
+         border: 2px solid #cd486b;
+         width: 100px;
+      }
+   }
+   .storewrapper {
+      background: white;
+      h3 {
+         margin-top: 0.8rem;
+      }
+
+      button {
          border: 2px solid white;
-         width: 80px;
+      }
+   }
+   .fusedwrapper {
+      background: teal;
+
+      img {
+         height: 33px;
+         margin-top: 1rem;
+         margin-bottom: -0.5rem;
+      }
+
+      button {
+         border: 2px solid teal;
+         width: 100px;
       }
    }
 
+   @media screen and (max-width: 1000px) {
+      .projectholder {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 10px;
+      }
+   }
    @media screen and (max-width: 799px) {
       width: 100%;
       p {
@@ -110,6 +155,12 @@ export const Wrapper = styled.div`
       .wrapper {
          p {
             font-size: 13px;
+         }
+      }
+      .projectholder {
+         display: block;
+         div {
+            margin-bottom: 10px;
          }
       }
    }
