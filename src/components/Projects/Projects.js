@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { Wrapper } from "./Projects.styles";
 import edusko from "../images/edusko.png";
 import oneburner from "../images/one-burner.png";
@@ -6,6 +8,9 @@ import prospa from "../images/prospa.png";
 import fused from "../images/fused.png";
 
 const Projects = () => {
+   useEffect(() => {
+      Aos.init({ duration: 1000 });
+   }, []);
    return (
       <Wrapper>
          <h4>So let's talk about my Projects.</h4>
@@ -26,7 +31,7 @@ const Projects = () => {
                   <button>See Edusko</button>
                </div>
             </div>
-            <div className="oneburnerwrapper">
+            <div data-aos="fade-up"  className="oneburnerwrapper">
                <div>
                   <img src={oneburner} alt="oneburner" />
                   <h5>Duration: One Month</h5>
@@ -46,7 +51,7 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-            <div className="storewrapper">
+            <div data-aos="fade-up"  className="storewrapper">
                <div>
                   <h3>Nuel-Store</h3>
                   <h5>Duration: One Month</h5>
@@ -64,7 +69,7 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-            <div className="prosperwrapper">
+            <div data-aos="fade-up"  className="prosperwrapper">
                <div>
                   <img src={prospa} alt="prospa" />
                   <h5>Duration: One Month</h5>
@@ -82,7 +87,7 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-            <div className="fusedwrapper">
+            <div data-aos="fade-up"  className="fusedwrapper">
                <div>
                   <img src={fused} alt="fused" />
                   <h5>Duration: Six Month</h5>
