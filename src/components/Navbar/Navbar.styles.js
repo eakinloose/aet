@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
-   padding: 4rem 2.5rem; 
+   padding: 4rem 2.5rem;
    background: #ffffff;
    color: #383838;
    font-size: clamp(11px, 2.5vw, 14px);
@@ -18,7 +18,7 @@ export const Nav = styled.div`
    h2 {
       margin-top: -15px;
       padding: 0;
-      font-size: clamp(26px, 2.5vw, 48px);
+      font-size: clamp(25.5px, 2.5vw, 42px);
       font-weight: 500;
    }
 
