@@ -13,26 +13,28 @@ const Projects = () => {
    }, []);
    return (
       <Wrapper>
-         <h4>So let's talk about my Projects.</h4>
+         <h3>So let's talk about my Projects.</h3>
          <div className="projectholder">
             <div className="Eduskowrapper">
-               <div>
+               <div className="flex">
                   <img src={edusko} alt="edusko" />
                   <h5>Duration: One Month</h5>
+                  <h5>Next.js and typeScript</h5>
+
                   <p>
-                     Fugiat nisi duis tempor fugiat sunt cupidatat adipisicing
-                     minim eu enim. Esse laboris aliqua ipsum ullamco qui mollit
-                     esse consectetur in et consectetur ullamco. Velit aliquip
-                     sunt eiusmod cillum tempor id occaecat velit proident
-                     deserunt exercitation eiusmod do dolor. Aute proident ad
-                     tempor tempor esse officia.
+                     Edusko is an education marketing company leveraging tech
+                     and data to make life easier for all in the African
+                     education community.
+                     <br />
                      <p>NB: In progress</p>
                   </p>
-                  <button>See Edusko</button>
+                  <button>
+                     <a href="https://edusko.com">See Edusko</a>
+                  </button>
                </div>
             </div>
-            <div data-aos="fade-up"  className="oneburnerwrapper">
-               <div>
+            <div data-aos="fade-up" className="oneburnerwrapper">
+               <div className="flex">
                   <img src={oneburner} alt="oneburner" />
                   <h5>Duration: One Month</h5>
                   <p>
@@ -51,8 +53,8 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-            <div data-aos="fade-up"  className="storewrapper">
-               <div>
+            <div data-aos="fade-up" className="storewrapper">
+               <div className="flex">
                   <h3>Nuel-Store</h3>
                   <h5>Duration: One Month</h5>
                   <p>
@@ -69,8 +71,8 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-            <div data-aos="fade-up"  className="prosperwrapper">
-               <div>
+            <div data-aos="fade-up" className="prosperwrapper">
+               <div className="flex">
                   <img src={prospa} alt="prospa" />
                   <h5>Duration: One Month</h5>
                   <p>
@@ -87,16 +89,15 @@ const Projects = () => {
                   </button>
                </div>
             </div>
-            <div data-aos="fade-up"  className="fusedwrapper">
-               <div>
+            <div data-aos="fade-up" className="fusedwrapper">
+               <div className="flex">
                   <img src={fused} alt="fused" />
                   <h5>Duration: Six Month</h5>
                   <p>
-                     Fugiat nisi duis tempor fugiat sunt cupidatat adipisicing
-                     minim eu enim. Esse laboris aliqua ipsum ullamco qui mollit
-                     deserunt exercitation eiusmod do dolor. Aute proident ad
-                     tempor tempor esse officia.
+                     FusedAfrika is a networking platform for tertiary
+                     institution students in Africa..
                   </p>
+                  <p></p>
                   <button>
                      <a href="https://nuelzfused.netlify.app">See Fused</a>
                   </button>

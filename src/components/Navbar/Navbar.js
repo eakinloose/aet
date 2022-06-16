@@ -5,19 +5,15 @@ import { Nav, NavLinks } from "./Navbar.styles";
 const Navbar = () => {
    return (
       <Nav>
-         <Link to="/" className="logo">
-            <h2>AET</h2>
-            <span>Akinloose Emmanuel Temidayo</span>
-         </Link>
-
-         <NavLinks>
-            <Link to="/">
-               <button>About</button>
+         <div className="nav">
+            <Link to="/" className="logo">
+               <h2>AET</h2>
             </Link>
-            <Link to="/">
-               <button>Contact</button>
-            </Link>
-         </NavLinks>
+            <NavLinks>
+               <Link to="/">ABOUT </Link>
+               <Link to="/">CONTACT</Link>
+            </NavLinks>
+         </div>
       </Nav>
    );
 };

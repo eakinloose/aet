@@ -8,8 +8,9 @@ export const Wrapper = styled.div`
    p {
       font-size: 14px;
    }
-   h4 {
-      margin: 5px 0;
+   h3 {
+      margin: 10px 0 20px;
+      text-align:center;
    }
 
    .projectholder {
@@ -138,6 +139,7 @@ export const Wrapper = styled.div`
          width: 100px;
       }
    }
+
 
    @media screen and (max-width: 1000px) {
       .projectholder {

@@ -1,22 +1,25 @@
 import styled from "styled-components";
 
 export const Nav = styled.div`
-   display: flex;
-   justify-content: space-between;
-   padding: 2.6rem 3rem 3.2rem;
+   padding: 4rem 2.5rem; 
+   background: #ffffff;
+   color: #383838;
+   font-size: clamp(11px, 2.5vw, 14px);
+   /* font-size: 14px; */
+   font-weight: 500;
 
-   .logo {
+   .nav {
       display: flex;
-      h2 {
-         /* color: #459975; */
-         color: #009985;
-         margin-top: -0.3rem;
-         padding: 0;
-      }
-      span {
-         margin-top: 5px;
-         font-size: 11px;
-      }
+      justify-content: space-between;
+      max-width: 1040px;
+      margin: auto;
+   }
+
+   h2 {
+      margin-top: -15px;
+      padding: 0;
+      font-size: clamp(26px, 2.5vw, 48px);
+      font-weight: 500;
    }
 
    @media screen and (max-width: 799px) {
@@ -25,21 +28,19 @@ export const Nav = styled.div`
 `;
 
 export const NavLinks = styled.div`
-   display: flex;
-   justify-content: space-between;
-
-   button {
-      padding: 5px;
-      width: 80px;
+   a {
       background: transparent;
-      color: white;
       border-radius: 5px;
-      margin-left: 0.6rem;
-      border: 2px solid transparent;
+      margin-left: 3rem;
       cursor: pointer;
+      color: #bebab3;
    }
 
-   button:focus {
-      border: 2px solid #459975;
+   a:hover {
+      color: #383838;
+   }
+
+   a:focus {
+      color: #783838;
    }
 `;
