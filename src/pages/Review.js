@@ -1,9 +1,10 @@
 import React from 'react'
+import Animation from '../components/Animation/Animation'
 
 const Review = () => {
   return (
     <div>
-      <h1>Review page</h1>
+      <Animation/>
     </div>
   )
 }

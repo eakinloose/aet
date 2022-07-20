@@ -11,15 +11,16 @@ export const Nav = styled.div`
    .nav {
       display: flex;
       justify-content: space-between;
-      max-width: 1040px;
+      max-width: 1100px;
       margin: auto;
    }
 
    h2 {
       margin-top: -15px;
-      padding: 0;
       font-size: clamp(25.5px, 2.5vw, 42px);
-      font-weight: 500;
+      letter-spacing: 4px;
+      text-align: center;
+      color: black;
    }
 
    @media screen and (max-width: 799px) {

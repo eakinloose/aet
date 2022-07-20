@@ -4,16 +4,6 @@ export const Wrapper = styled.div`
    width: 100%;
    margin: auto;
 
-   .whitespace {
-      width: 100%;
-      background: #f8f8f7;
-      height: 150px;
-
-      @media screen and (max-width: 700px){
-         height: 70px;
-      }
-   }
-
    h2 {
       width: 60%;
       color: #009985;
@@ -58,7 +48,7 @@ export const FlexWrapper = styled.div`
 
 `
 export const Flex = styled.div`
-   max-width: 1040px;
+   max-width: 1100px;
    margin: auto;
    display: flex;
    padding: 10rem 0;

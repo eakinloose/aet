@@ -10,8 +10,7 @@ const Navbar = () => {
                <h2>AET</h2>
             </Link>
             <NavLinks>
-               <Link to="/">ABOUT </Link>
-               <Link to="/">CONTACT</Link>
+               <Link to="/review">MY PROJECTS</Link>
             </NavLinks>
          </div>
       </Nav>

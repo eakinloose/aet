@@ -6,7 +6,6 @@ import imgg from "../images/imgg.jpg";
 const Topsection = () => {
    return (
       <Wrapper>
-         <div className="whitespace"></div>
          <FlexWrapper>
             <Flex>
                <div className="firstchild">
@@ -15,7 +14,7 @@ const Topsection = () => {
                   </h2>
                   <p>
                      I speciallize in frontend development for web and mobile
-                     applications. find my reviews here on{" "}
+                     applications. find my projects here on{" "}
                      <span className="aet">
                         <Link to="/review">AET</Link>
                      </span>
