@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
    background: black;
-   height: 1700px;
+   height: 1750px;
    color: white !important;
-   
+
    @media screen and (max-width: 609px) {
       height: 3100px;
    }
@@ -18,6 +18,7 @@ export const Container = styled.section`
 
 export const Title = styled.h1`
    font-size: 35px;
+   font-size: clamp(25.5px, 2.5vw, 32px);
    letter-spacing: 4px;
    text-align: center;
    color: #009985;
@@ -30,8 +31,8 @@ export const Ul = styled.ul`
    justify-content: center;
    margin: auto;
    position: relative;
-   top: 80px;
-   gap: 40px 50px;
+   top: 60px;
+   gap: 100px 50px;
 
    @media screen and (max-width: 609px) {
       display: block;
@@ -41,7 +42,8 @@ export const Ul = styled.ul`
       color: white;
       margin-bottom: 35px;
       padding: 7px;
-      font-size: 27px;
+      font-size: 24px;
+      font-size: clamp(20.5px, 2.5vw, 24px);
       text-transform: uppercase;
       span {
          &:hover {
@@ -61,7 +63,7 @@ export const Ul = styled.ul`
       }
 
       p {
-         font-size: 17px;
+         font-size: clamp(13.5px, 2.5vw, 17px);
          margin: 10px 0;
       }
 

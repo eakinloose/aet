@@ -1,6 +1,6 @@
 import fused from "../images/fused.gif";
 import prospa from "../images/prospa.gif";
-import denukan from "../images/denukan.gif";
+// import denukan from "../images/denukan.gif";
 
 export const fakeData = [
    {
@@ -27,18 +27,18 @@ export const fakeData = [
       framework4: "styled-components",
       link: "https://nuelzprospa.netlify.app/",
    },
-   {
-      id: 4,
-      name: "Denukan.com",
-      img: denukan,
-      desc: "a Company organized principally to provide quality services to its various customers in the areas of Technology and Financial Consultancy.",
-      framework: "react",
-      framework2: "javascript",
-      framework3: "frontend",
-      repo: "https://github.com/eakinloose/denukan.git",
-      framework4: "styled-components",
-      link: "https://www.denukan.com",
-   },
+   // {
+   //    id: 4,
+   //    name: "Denukan.com",
+   //    img: denukan,
+   //    desc: "a Company organized principally to provide quality services to its various customers in the areas of Technology and Financial Consultancy.",
+   //    framework: "react",
+   //    framework2: "javascript",
+   //    framework3: "frontend",
+   //    repo: "https://github.com/eakinloose/denukan.git",
+   //    framework4: "styled-components",
+   //    link: "https://www.denukan.com",
+   // },
    {
       id: 5,
       name: "Koʻza shoʻrva",
