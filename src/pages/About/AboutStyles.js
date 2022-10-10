@@ -141,6 +141,27 @@ export const AboutWrapper = styled.div`
         }
         
       @media screen and (max-width: 590px) {
+        .infos {
+         .personal-info {
+            display: block;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem auto 5rem;
+         }
+
+         .image-container {
+            height: 300px;
+            width: 300px;
+            margin: 0 auto 9rem;
+            transform: translatex(-10px);
+            
+            img {
+              width: 100%;
+              transform: translate(30px, 30px);
+            }
+          }
+        }
         .btn-resume{
           width: 100%;
           display: inline-block;

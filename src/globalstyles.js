@@ -100,7 +100,7 @@ const GlobalStyles = createGlobalStyle`
      justify-content: center;
      align-items: center;
      position: fixed;
-     top: 7rem;
+     top: 2rem;
      
    }
 
@@ -112,7 +112,7 @@ const GlobalStyles = createGlobalStyle`
       fill-opacity: 1;
       opacity: 0.7;
       color: ${({ theme }) => theme.colors.white};
-      top: 7.2rem;
+      top: 2.2rem;
       left: 6rem;
       width: 90%;
       max-width: 270px;

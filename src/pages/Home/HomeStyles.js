@@ -4,11 +4,12 @@ export const HomeWrapper = styled.div`
    width: 100%;
    height: 100vh;
    max-width: 1270px;
-   margin: auto;
+   margin: 0 auto;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   padding-bottom: 3rem;
 
    .details {
       display: flex;
@@ -90,6 +91,8 @@ export const HomeWrapper = styled.div`
 
          .imgWrapper {
             margin: auto;
+            width: 250px;
+            height: 250px;
 
             img {
             }
