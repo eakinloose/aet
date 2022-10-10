@@ -42,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
     cursor: pointer;
     box-sizing: border-box;
     display: inline-block;
-    max-width: 100%;
+    width: 150px;
     text-align: center;
     padding: 1.2rem 2.4rem;
     overflow: hidden;

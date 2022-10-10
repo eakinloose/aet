@@ -60,7 +60,7 @@ export const AboutWrapper = styled.div`
 
             h4 {
                font-weight: 400;
-               letter-spacing: 1.1px;
+               letter-spacing: 1.05px;
                font-size: 1.45rem;
             }
          }
@@ -122,52 +122,52 @@ export const AboutWrapper = styled.div`
             width: 350px;
             border: 5px solid ${({ theme }) => theme.colors.button};
             margin: 0 -20px 9rem;
-            
+
             img {
-              width: 100%;
-              transform: translate(30px, 30px);
+               width: 100%;
+               transform: translate(30px, 30px);
             }
-          }
-          grid-template-columns: repeat(2, 1fr);
-          
-          .ul{
+         }
+         grid-template-columns: repeat(2, 1fr);
+
+         .ul {
             display: block;
-            margin:  6rem -20px 2rem;
-          }
-          
-          .ul-cont{
-            width: 100%;
-          }
-        }
-        
-      @media screen and (max-width: 590px) {
-        .infos {
-         .personal-info {
-            display: block;
-            width: 90%;
-            justify-content: space-between;
-            align-items: center;
-            margin: 2rem auto 5rem;
+            margin: 6rem -20px 2rem;
          }
 
-         .image-container {
-            height: 300px;
-            width: 300px;
-            margin: 0 auto 9rem;
-            transform: translatex(-10px);
-            
-            img {
-              width: 100%;
-              transform: translate(30px, 30px);
+         .ul-cont {
+            width: 100%;
+         }
+      }
+
+      @media screen and (max-width: 590px) {
+         .infos {
+            .personal-info {
+               display: block;
+               width: 90%;
+               justify-content: space-between;
+               align-items: center;
+               margin: 2rem auto 5rem;
             }
-          }
-        }
-        .btn-resume{
-          width: 100%;
-          display: inline-block;
-          margin: 1rem auto 0;
-          text-align: center;
-        }
+
+            .image-container {
+               height: 300px;
+               width: 300px;
+               margin: 0 auto 9rem;
+               transform: translatex(-10px);
+
+               img {
+                  width: 100%;
+                  transform: translate(30px, 30px);
+               }
+            }
+         }
+         .btn-resume {
+            width: 100%;
+            display: inline-block;
+            margin: 1rem auto 0;
+            text-align: center;
+         }
          .skills {
             display: block;
             margin-top: -2rem;
