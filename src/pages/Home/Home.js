@@ -39,6 +39,7 @@ const Home = () => {
                         </div>
                      </button>
                   </Link>
+                  &nbsp;&nbsp;
                   <Link to="/portfolio">
                      <button>
                         <div className="btn">
