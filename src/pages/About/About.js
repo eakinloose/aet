@@ -160,14 +160,14 @@ const About = () => {
                   <div className="chart-bar">
                      <span
                         className="item-progress"
-                        data-percent={70}
-                        style={{ width: "70%" }}
+                        data-percent={85}
+                        style={{ width: "85%" }}
                      />
                      <span
                         className="percent"
                         style={{ right: "calc(30% - 21px)" }}
                      >
-                        70%
+                        85%
                         <h2>
                            <GiSpiralArrow />
                         </h2>

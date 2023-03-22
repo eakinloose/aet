@@ -22,13 +22,14 @@ const GlobalStyles = createGlobalStyle`
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
       font-size: 1.4rem;
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 0.02rem;
       line-height: 2.5rem;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background: #ebf2fc;
    }
 
    a{

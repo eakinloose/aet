@@ -1,18 +1,18 @@
 import MovingComponent from "react-moving-text";
 const AnimationText = () => {
    return (
-      <h1 className="side">
+      <h2 className="side">
          {`I'm`}
          <MovingComponent
             type="typewriter"
             dataText={[
                "Akinloose Emmanuel Temidayo",
-               "a javascript/react developer",
+               "a full-stack react, react native & nodejs developer",
                "a graphic designer",
                "a freelancer",
             ]}
          />
-      </h1>
+      </h2>
    );
 };
 export default AnimationText;

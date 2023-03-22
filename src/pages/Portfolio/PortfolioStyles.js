@@ -8,7 +8,7 @@ export const PortfolioWrapper = styled.div`
 
    .head {
       width: 70%;
-      margin: 2rem auto 8rem;
+      margin: 2rem auto 5rem;
       text-align: center;
       font-weight: 400;
 
@@ -21,54 +21,60 @@ export const PortfolioWrapper = styled.div`
       }
    }
 
-   #portfolio-items {
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 7rem;
-   }
-
-   ul,
-   li {
-      list-style: none;
+   .left {
+      text-align: start;
       margin: 0;
-      padding: 0;
    }
 
-   li {
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
-         rgba(0, 0, 0, 0.24) 0px 1px 2px;
-      border-radius: 10px 10px 0 0;
+   #projects {
+      .projectWrapper {
+         display: flex;
+         flex-direction: row-reverse;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 5rem;
 
-      img {
-         width: 100%;
-         /* filter: brightness(80%); */
-         border-radius: 10px 10px 0 0;
-         max-width: 500px;
-      }
+         @media screen and (max-width: 790px) {
+            display: block;
+         }
 
-      .details {
-         padding: 1rem 1rem;
-         margin: 0 1rem;
+         .textWrapper {
+            width: 100%;
+            margin-right: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-         p,
-         a {
-            font-weight: 400;
+            h1, h2 {
+               margin-bottom: 0;
+            }
+
+            span {
+               display: inline-block;
+               line-height: 1.9;
+            }
+
+            @media screen and (max-width: 790px) {
+               margin-right: 0;
+            }
+         }
+
+         .imgWrapper {
+            width: 100%;
+            margin: auto;
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
+               width: 100%;
+               object-fit: cover;
+               border-radius: 5px;
+            }
          }
       }
    }
 
-   @media screen and (max-width: 790px) {
-      grid-template-columns: repeat(2, 1fr);
-   }
-
-   @media screen and (max-width: 590px) {
-      #portfolio-items {
-         display: block;
-         margin-top: -2rem;
-         li {
-            margin-bottom: 3rem;
-         }
-      }
-   }
+   
 `;

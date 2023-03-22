@@ -43,6 +43,7 @@ export const HomeWrapper = styled.div`
 
          .name {
             h1,
+            h2,
             h3 {
                color: ${({ theme }) => theme.colors?.button};
             }
