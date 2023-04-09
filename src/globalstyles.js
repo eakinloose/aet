@@ -29,7 +29,9 @@ const GlobalStyles = createGlobalStyle`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background: #ebf2fc;
+    background: ${({ theme }) => theme.colors?.black};
+    /* background: red; */
+    color: ${({ theme }) => theme.colors?.grey01};
    }
 
    a{

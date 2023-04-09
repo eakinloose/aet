@@ -89,14 +89,14 @@ export const AboutWrapper = styled.div`
 
          .item-progress {
             display: inline-block;
-            background-color: ${({ theme }) => theme.colors.button};
+            background-color: ${({ theme }) => theme.colors.buttonhover};
             height: 2px;
          }
 
          .percent {
             height: 10px;
             width: 0px;
-            background: ${({ theme }) => theme.colors.button};
+            background: ${({ theme }) => theme.colors.buttonhover};
 
             h2 {
                height: 20px;
