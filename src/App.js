@@ -5,7 +5,6 @@ import "animate.css";
 import Home from "./pages/Home/Home";
 import Page404 from "./pages/404/Page404";
 import About from "./pages/About/About";
-import Portfolio from "./pages/Portfolio/Portfolio";
 import { RiMenuUnfoldFill } from "react-icons/ri";
 import { useState } from "react";
 import Timeline from "./pages/Timeline/Timeline";
