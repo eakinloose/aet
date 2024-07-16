@@ -34,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors?.grey01};
    }
 
-   a{
+   a, strong{
       text-decoration: none;
       color: ${({ theme }) => theme.colors?.button};
    }
@@ -91,6 +91,10 @@ const GlobalStyles = createGlobalStyle`
     color: grey;
   }
 
+  .blog-item-content h3, .blog-item-content span{
+    color: ${({ theme }) => theme.colors?.button};
+  }
+
   .menu{
      background: black;
      fill-opacity: 1;
@@ -118,7 +122,7 @@ const GlobalStyles = createGlobalStyle`
       top: 2.2rem;
       left: 6rem;
       width: 90%;
-      max-width: 270px;
+      max-width: 370px;
       border-radius: 50px;
     
     h4, a{
@@ -132,6 +136,173 @@ const GlobalStyles = createGlobalStyle`
   .side{
     display: flex;
   }
+
+
+
+  .vertical-timeline-element-content {
+  background: #fff !important; /* Override default background */
+  color: black !important; /* Text color */
+}
+  .vertical-timeline-element-content:hover{
+    color: white !important;
+    background: ${({ theme }) => theme.colors.button} !important;
+     transition: background-color 0.3s ease;
+     transform: translateY(-5px);
+  color: ${({ theme }) => theme.colors.white} !important;
+  box-shadow: ${({ theme }) => theme.colors.button} 0px 1px 9px 0px;
+  transform: scale(1.025);
+    transition: transform 0.3s ease, transform 0.3s ease;
+  }
+
+
+
+.vertical-timeline-element-title:hover, .vertical-timeline-element-subtitle:hover {
+  color: white !important; /* Title text color */
+}
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  color: white !important; /* Date text color */
+}
+
+/* src/Blog.css */
+/* src/Blog.css */
+
+.blog-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: black;
+}
+
+.blog-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+   .blog-container {
+  padding: 10px;
+  max-width: 1200px;
+  margin: -120px auto;
+  color: black;
+}
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog-item {
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  color: whitesmoke;
+}
+
+.blog-item:hover {
+  transform: translateY(-5px);
+  color: ${({ theme }) => theme.colors.white} !important;
+  box-shadow: ${({ theme }) => theme.colors.button} 0px 1px 9px 0px;
+
+}
+
+.blog-item img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.blog-item:hover{
+   transform: scale(1.025);
+    transition: transform 0.3s ease, transform 0.3s ease;
+
+}
+.blog-item h3 {
+  margin: 5px 0;
+  padding: 0 5px; /* Add padding to align with text */
+}
+
+.blog-item p {
+  margin: 0 0 10px;
+  padding: 0 5px; /* Add padding to align with text */
+}
+
+/* Additional styling for content alignment */
+.blog-item-content {
+  padding: 15px 10px;
+}
+
+
+
+.pagination {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination li a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* src/BlogDetail.css */
+
+.blog-detail-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.blog-detail-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.blog-detail-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-detail-container p {
+  margin: 10px 0;
+}
+
+
 `;
 
 export { GlobalStyles };
