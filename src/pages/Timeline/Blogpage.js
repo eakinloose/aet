@@ -37,7 +37,10 @@ const Blogpage = () => {
         key={index}
         onClick={() => openBlogDetail(book)}
       >
-        <img src={book.volumeInfo.imageUrl.smallThumbnail} alt="Blog image" />
+        <img
+          src={book.volumeInfo.imageUrl.smallThumbnail}
+          alt={book.volumeInfo.title}
+        />
         <div className="blog-item-content">
           <h3>{book.volumeInfo.title}</h3>
           <p
