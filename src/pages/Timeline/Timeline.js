@@ -26,7 +26,7 @@ const Timeline = () => {
             Software QA Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Quality Certain [RSNL : Retail Supermarket Nigeria LTD]
+            RSNL : Retail Supermarket Nigeria LTD (shoprite and jara)
           </h4>
           <ul>
             <li>
@@ -67,7 +67,7 @@ const Timeline = () => {
             Software QA Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Quality Certain - Fidelity Bank
+            Fidelity Bank Plc
           </h4>
           <ul>
             <li>
