@@ -12,7 +12,7 @@ const blogContent = [
       authors: ["Akinloose Emmanuel Temidayo"],
       publishedDate: "2024-07-16",
       description: `
-      <h3>Understanding cypress Interceptss</h3>
+      <h3>Understanding cypress Intercepts</h3>
 Cypress intercepts provide a powerful way to manage and validate network requests within your tests. They allow you to capture and manipulate requests and responses, making your tests more robust and reliable. This capability is particularly useful in scenarios where you need to verify that your application correctly handles data from external APIs.
 <br><br>
 <strong>Use Case 1: Basic Cypress Intercept</strong>

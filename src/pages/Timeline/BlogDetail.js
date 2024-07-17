@@ -1,16 +1,30 @@
 // src/BlogDetail.js
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useLocation, useParams } from "react-router-dom";
 import { AboutWrapper } from "../About/AboutStyles";
 import CodeSnippet from "../../components/Codesnippet";
+import blogContent from "../../Data/BlogArray";
 
 const BlogDetail = () => {
   const location = useLocation();
-  const book = location.state.book;
+  const { id } = useParams();
+  const [blog, setBlog] = useState(location.state?.blog || null);
+
+  useEffect(() => {
+    if (!blog && id) {
+      // Find the blog data from the array based on the ID
+      const foundBlog = blogContent.find((blog) => blog.id === id);
+      setBlog(foundBlog);
+    }
+  }, [blog, id]);
 
   const createMarkup = (html) => {
     return { __html: html };
   };
+
+  if (!blog) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <AboutWrapper>
@@ -20,31 +34,32 @@ const BlogDetail = () => {
             Blog <span>Content</span>
           </h1>
         </div>
-        <p>
-          <h2>{book.volumeInfo.title}</h2>
-          <strong>Subtitle:</strong> {book.volumeInfo.subtitle || "N/A"}
-        </p>
-        <p>
+        <div>
+          <h2>{blog.volumeInfo.title}</h2>
+          <p>
+            <strong>Subtitle:</strong> {blog.volumeInfo.subtitle || "N/A"}
+          </p>
+        </div>
+        <div>
           <strong>Authors:</strong>{" "}
-          {book.volumeInfo.authors
-            ? book.volumeInfo.authors.join(", ")
+          {blog.volumeInfo.authors
+            ? blog.volumeInfo.authors.join(", ")
             : "Unknown Author"}
-        </p>
-        <p>
+        </div>
+        <div>
           <strong>Published Date:</strong>{" "}
-          {book.volumeInfo.publishedDate || "N/A"}
-        </p>
-        <p
+          {blog.volumeInfo.publishedDate || "N/A"}
+        </div>
+        <div
           dangerouslySetInnerHTML={createMarkup(
-            book.volumeInfo.description || "No description available."
+            blog.volumeInfo.description || "No description available."
           )}
-        ></p>
-
-        <CodeSnippet language="javascript" code={book.exampleCode1} />
-        <p>{book.volumeInfo.subtitleTwo}</p>
-        <p dangerouslySetInnerHTML={createMarkup(book.description2)}></p>
-        <CodeSnippet language="javascript" code={book.exampleCode2} />
-        <p dangerouslySetInnerHTML={createMarkup(book.conclusion)}></p>
+        ></div>
+        <CodeSnippet language="javascript" code={blog.exampleCode1} />
+        <div>{blog.subtitleTwo}</div>
+        <div dangerouslySetInnerHTML={createMarkup(blog.description2)}></div>
+        <CodeSnippet language="javascript" code={blog.exampleCode2} />
+        <div dangerouslySetInnerHTML={createMarkup(blog.conclusion)}></div>
       </div>
     </AboutWrapper>
   );
