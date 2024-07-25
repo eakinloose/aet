@@ -95,6 +95,11 @@ const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.colors?.button};
   }
 
+  .blog-item-content p h4{
+    margin: 10px 0;
+    color: ${({ theme }) => theme.colors?.button};
+  }
+
   .menu{
      background: black;
      fill-opacity: 1;
@@ -122,7 +127,7 @@ const GlobalStyles = createGlobalStyle`
       top: 2.2rem;
       left: 6rem;
       width: 90%;
-      max-width: 370px;
+      max-width: 430px;
       border-radius: 50px;
     
     h4, a{
@@ -246,7 +251,9 @@ const GlobalStyles = createGlobalStyle`
   padding: 15px 10px;
 }
 
-
+.native{
+  width: 100%;
+}
 
 .pagination {
   display: flex;

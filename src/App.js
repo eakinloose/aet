@@ -10,6 +10,7 @@ import { useState } from "react";
 import Timeline from "./pages/Timeline/Timeline";
 import BlogPage from "./pages/Timeline/Blogpage";
 import BlogDetail from "./pages/Timeline/BlogDetail";
+import Tools from "./pages/Timeline/Tools";
 
 const theme = {
   colors: {
@@ -39,11 +40,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/portfolio" element={<Portfolio />} /> */}
         <Route path="*" element={<Page404 />} />
         <Route path="/experience" element={<Timeline />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
+        <Route path="/tools" element={<Tools />} />
       </Routes>
       <div className="navv">
         {" "}
@@ -63,11 +64,11 @@ function App() {
             <h4>
               <Link to="/experience">Experience</Link>
             </h4>
-            {/* <h4>
-              <Link to="/portfolio">Portfolio</Link>
-            </h4> */}
             <h4>
               <Link to="/blog">Blog</Link>
+            </h4>
+            <h4>
+              <Link to="/tools">Tools</Link>
             </h4>
           </div>
         ) : null}

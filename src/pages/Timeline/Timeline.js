@@ -18,7 +18,73 @@ const Timeline = () => {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="April 2023 - Present"
+          date="February 2024 - Present"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<FaBriefcase />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Software Development Engineer in Test (SDET)
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Sterling Bank Plc, Lagos, Nigeria
+          </h4>
+          <ul>
+            <li>
+              Leveraged Java with Appium to develop robust mobile automation
+              frameworks for Android and iOS platforms, ensuring comprehensive
+              test coverage and enhanced mobile application quality.
+            </li>
+            <li>
+              Utilized Cypress for web automation, creating efficient and
+              reliable test scripts tailored to the organization's specific
+              needs.
+            </li>
+            <li>
+              Conducted performance testing using JMeter and K6, writing
+              advanced Groovy scripts to handle complex and dynamic scenarios to
+              ensure the system's stability under load.
+            </li>
+            <li>
+              Automated and created reusable scripts for encrypting payloads and
+              decrypting responses across various platforms, utilizing Groovy
+              scripting in JMeter and JavaScript in Postman.
+            </li>
+            <li>
+              Developed custom commands and assertions for Cypress automation,
+              ensuring that the automation scripts were uniquely tailored to the
+              organization's requirements.
+            </li>
+            <li>
+              Designed and implemented comprehensive test strategies, focusing
+              on critical areas such as transaction flows, security, and
+              performance, to ensure the highest quality of software releases.
+            </li>
+            <li>
+              Collaborated closely with cross-functional teams, including
+              developers and product managers, to ensure seamless integration
+              and functionality of software components.
+            </li>
+            <li>
+              Tracked and reported key metrics on test progress, component
+              stability, and defect trends, providing valuable insights to
+              stakeholders and guiding quality assurance efforts.
+            </li>
+            <li>
+              Conducted post-release retrospectives, working with developers to
+              capture lessons learned and apply continuous improvement
+              principles to the testing and release processes.
+            </li>
+            <li>
+              Contributed to improving other QA engineers and provided guides
+              and training on best practices in test automation and performance
+              testing, fostering a culture of quality and continuous learning
+              within the team.
+            </li>
+          </ul>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="April 2024 - May 2024"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<FaBriefcase />}
         >
@@ -26,7 +92,8 @@ const Timeline = () => {
             Software QA Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            RSNL : Retail Supermarket Nigeria LTD (shoprite and jara)
+            RSNL : Retail Supermarket Nigeria LTD (Shoprite & JARA), Lagos,
+            Nigeria
           </h4>
           <ul>
             <li>
@@ -59,7 +126,7 @@ const Timeline = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="June 2023 - April 2024"
+          date="June 2023 - February 2024"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<FaBriefcase />}
         >
@@ -67,7 +134,7 @@ const Timeline = () => {
             Software QA Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Fidelity Bank Plc
+            Fidelity Bank Plc, Lagos, Nigeria
           </h4>
           <ul>
             <li>
@@ -85,12 +152,12 @@ const Timeline = () => {
             </li>
             <li>
               Created test scenarios mapping to 100+ user stories for bank
-              transaction flows and document uploads using mind maps and
+              transaction flows and document uploads. Using mind maps and
               session-based testing to examine key paths.
             </li>
             <li>
               Designed over 300 test cases for validating fixes, regressions,
-              and new functionality across backend APIs and UI flows, ensuring
+              and new functionality across backend APIs and UI flows. Ensuring
               90%+ test coverage of all modules.
             </li>
             <li>
@@ -124,7 +191,7 @@ const Timeline = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="May 2022 - August 2023"
+          date="May 2022 - June 2023"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<FaBriefcase />}
         >
@@ -132,7 +199,7 @@ const Timeline = () => {
             Software QA Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Denukan Network Limited
+            Denukan Network Limited, Lagos, Nigeria
           </h4>
           <ul>
             <li>
@@ -188,13 +255,15 @@ const Timeline = () => {
           <h3 className="vertical-timeline-element-title">
             Software QA Engineer
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Edusko</h4>
+          <h4 className="vertical-timeline-element-subtitle">
+            Edusko, Lagos, Nigeria
+          </h4>
           <ul>
             <li>
               Played a crucial role in the successful development and launch of
               Edusko versions 2.0 and 3.0, contributing to increased user
-              satisfaction and a significant percentage growth in the active
-              user base.
+              satisfaction and a significant percentage growth in active user
+              base.
             </li>
             <li>
               Developed and executed comprehensive test plans, resulting in
@@ -233,7 +302,7 @@ const Timeline = () => {
             Associate QA Engineer
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Dornier MedTech - Atlanta [Georgia]
+            Dornier MedTech, Atlanta, United States
           </h4>
           <ul>
             <li>
@@ -261,10 +330,10 @@ const Timeline = () => {
           icon={<FaSchool />}
         >
           <h3 className="vertical-timeline-element-title">
-            Mechanical Engineering
+            Lagos State Polytechnic
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Lagos State Polytechnic, Ikorodu
+            Mechanical Engineering
           </h4>
         </VerticalTimelineElement>
       </VerticalTimeline>
