@@ -28,7 +28,7 @@ const theme = {
 };
 
 function App() {
-  const [display, setDisplay] = useState(true);
+  const [display, setDisplay] = useState(false);
 
   const toggledisplay = () => {
     setDisplay(!display);
